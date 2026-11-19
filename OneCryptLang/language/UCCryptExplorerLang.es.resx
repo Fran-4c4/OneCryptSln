@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EncryptDecryptItem_DecryptButFileExists" xml:space="preserve">
+    <value>El fichero que intenta desencriptar ya existe.</value>
+    <comment>Mensaje de error cuando no existe el fichero</comment>
+  </data>
+  <data name="EncryptDecryptItem_questionFileNotfound" xml:space="preserve">
+    <value>El fichero no existe en la ubicación seleccionada. Quieres mantener el fichero en la biblioteca o eliminarlo definitivamente?</value>
+    <comment>Mensaje de error cuando no existe el fichero</comment>
+  </data>
+  <data name="EncryptDecryptItem_questionFileNotfound_BtnDelete" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="EncryptDecryptItem_questionFileNotfound_BtnNotDelete" xml:space="preserve">
+    <value>Mantener</value>
+  </data>
+  <data name="UCAssistantMessage_lblDragFromExplorerInfoDown" xml:space="preserve">
+    <value>Selecciona ficheros o carpetas en el explorador de windows y arrastralas a la ventana de libreria</value>
+  </data>
+  <data name="UCAssistantMessage_lblDragFromExplorerTop" xml:space="preserve">
+    <value>Selecciona carpetas en el explorador de la aplicación y arrastralas a la ventana de libreria</value>
+  </data>
+  <data name="UCAssistantMessage_lbl_or" xml:space="preserve">
+    <value>O ...</value>
+  </data>
+  <data name="UCAssistantMessage_lbl_title" xml:space="preserve">
+    <value>Añade ficheros a tu libreria</value>
+  </data>
+  <data name="ucCryptExp_lv_name" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_lv_path" xml:space="preserve">
+    <value>Ruta del fichero</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_lv_size" xml:space="preserve">
+    <value>Tamaño</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_lv_type" xml:space="preserve">
+    <value>Tipo</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_mniFolderOpen" xml:space="preserve">
+    <value>Abrir carpeta contenedora</value>
+    <comment>used in uccryptexplorer listview context menu </comment>
+  </data>
+  <data name="ucCryptExp_mniRemove" xml:space="preserve">
+    <value>Quitar de la libreria</value>
+    <comment>used in uccryptexplorer listview context menu</comment>
+  </data>
+  <data name="ucCryptExp_mniRemove_msgdelete" xml:space="preserve">
+    <value>Quieres quitar el siguiente fichero de la libreria?</value>
+  </data>
+  <data name="ucCryptExp_mniRemove_tt" xml:space="preserve">
+    <value>Quita el fichero de la libreria pero no del disco duro</value>
+    <comment>used in uccryptexplorer listview context menu</comment>
+  </data>
+  <data name="ucCryptExp_mnuopenfile" xml:space="preserve">
+    <value>Abrir</value>
+    <comment>used in uccryptexplorer listview context menu</comment>
+  </data>
+  <data name="ucCryptExp_workspaceload_fileNotFound" xml:space="preserve">
+    <value>la libreria no existe en la localización solicitada</value>
+  </data>
+  <data name="UCExplorer_btnCollapseCryptExplorer" xml:space="preserve">
+    <value>Ampliar o minimizar  panel</value>
+  </data>
+  <data name="UCExplorer_imgExplorerTop_TT" xml:space="preserve">
+    <value>Pulse aqui para expandir el explorador para añadir ficheros a su libreria</value>
+  </data>
+  <data name="UCExplorer_lblEncryptedLib" xml:space="preserve">
+    <value>libreria</value>
+  </data>
+  <data name="UCExplorer_lblExplorerTop" xml:space="preserve">
+    <value>Explorador</value>
+  </data>
+  <data name="UCExplorer_lblListViewItemCount" xml:space="preserve">
+    <value>{0} elementos</value>
+  </data>
+  <data name="UcExplorer_LvItemAddedCountEvent" xml:space="preserve">
+    <value>{0} elementos añadidos</value>
+  </data>
+  <data name="UCExplorer_UcCryptExplorer1_TT" xml:space="preserve">
+    <value>Esta es la lista de ficheros que sueles encriptar</value>
+  </data>
+  <data name="UcExplorer_LvItemRemoveCountEvent" xml:space="preserve">
+    <value>{0} elementos eliminados</value>
+  </data>
+  <data name="UcExplorer_LvItemAddedLibraryLoad" xml:space="preserve">
+    <value>{0} elementos cargados</value>
+  </data>
+  <data name="OpenDialog_CompressFileNew" xml:space="preserve">
+    <value>Introduce el nombre del fichero comprimido</value>
+  </data>
+  <data name="mniZip_Click" xml:space="preserve">
+    <value>Comprimir archivos seleccionados</value>
+  </data>
+  <data name="mniZip_Click_result" xml:space="preserve">
+    <value>Los archivos seleccionados han sido comprimidos en {0}</value>
+  </data>
+  <data name="UcExplorer_LvItemSaveCountEvent" xml:space="preserve">
+    <value>{0} elementos añadidos a la libreria</value>
+  </data>
+  <data name="library_Save_question" xml:space="preserve">
+    <value>Se han producido cambios en la libreria. Desea guardarlos?</value>
+  </data>
+  <data name="library_Save_questionTitle" xml:space="preserve">
+    <value>Guardando libreria {0}</value>
+  </data>
+  <data name="library_Save_questionForAll" xml:space="preserve">
+    <value>Se han producido cambios en algunas librerias.
+
+     {0}
+
+Desea cerrar la aplicacion de todas formas?</value>
+  </data>
+  <data name="library_Save_questionForRecentFiles" xml:space="preserve">
+    <value>La libreria de ficheros recientes ha cambiado. (Si la has cerrado puedes abrirla en el menu librerias)</value>
+  </data>
+  <data name="mniDeleteFileText" xml:space="preserve">
+    <value>Eliminar el archivo fisico</value>
+  </data>
+  <data name="mniDeleteFileToolTipText" xml:space="preserve">
+    <value>Eliminar el archivo fisicamente de su localización</value>
+  </data>
+  <data name="mniDelete_msgdelete1" xml:space="preserve">
+    <value>Quieres borrar el fichero fisicamente?</value>
+  </data>
+  <data name="ucCryptExp_lv_lastaccess" xml:space="preserve">
+    <value>Ultimo acceso</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_lv_openAt" xml:space="preserve">
+    <value>Abierto en</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+</root>

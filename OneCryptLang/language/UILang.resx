@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EncryptDecryptItem_DecryptButFileExists" xml:space="preserve">
+    <value>The file you try to decrypt exists in </value>
+    <comment>Mensaje de error cuando no existe el fichero</comment>
+  </data>
+  <data name="EncryptDecryptItem_questionFileNotfound" xml:space="preserve">
+    <value>The file does not exist in the selected location. Do you want to keep the file in the library or permanently delete this?</value>
+    <comment>Mensaje de error cuando no existe el fichero</comment>
+  </data>
+  <data name="EncryptDecryptItem_questionFileNotfound_BtnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="EncryptDecryptItem_questionFileNotfound_BtnNotDelete" xml:space="preserve">
+    <value>Keep</value>
+  </data>
+  <data name="FileNotFoundException" xml:space="preserve">
+    <value>File is not available in selected path. Please check the path {0}</value>
+  </data>
+  <data name="frmMain_InitialProyectNameForTitle" xml:space="preserve">
+    <value>Recent files</value>
+  </data>
+  <data name="frmMain_mniAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="frmMain_mniChangePwd" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="frmMain_mniCheckOpenAfterDecrypt" xml:space="preserve">
+    <value>Open after decrypt</value>
+  </data>
+  <data name="frmMain_mniCheckOpenAfterDecrypt_OFF" xml:space="preserve">
+    <value>Open after decrypt is disabled</value>
+  </data>
+  <data name="frmMain_mniCheckOpenAfterDecrypt_ON" xml:space="preserve">
+    <value>Open after decrypt is enabled</value>
+  </data>
+  <data name="frmMain_mniCheckOpenAfterDecrypt_TT" xml:space="preserve">
+    <value>Check this option if you want to open the files after decrypt</value>
+  </data>
+  <data name="frmMain_mniHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="frmMain_mniHelp_tt" xml:space="preserve">
+    <value>Open application help</value>
+  </data>
+  <data name="frmMain_mniProjectNew" xml:space="preserve">
+    <value>New library</value>
+  </data>
+  <data name="frmMain_mniProjectNew_Click_openfilter" xml:space="preserve">
+    <value>All files</value>
+  </data>
+  <data name="frmMain_mniProjectNew_Click_opentitle" xml:space="preserve">
+    <value>Enter library name</value>
+  </data>
+  <data name="frmMain_mniProjectOpen" xml:space="preserve">
+    <value>Open library</value>
+  </data>
+  <data name="frmMain_mniProjectOpen_Click_openFilter" xml:space="preserve">
+    <value>All files</value>
+  </data>
+  <data name="frmMain_mniProjectOpen_Click_opentitle" xml:space="preserve">
+    <value>Choose library to load</value>
+  </data>
+  <data name="frmMain_mniProjectRecents" xml:space="preserve">
+    <value>Recent libraries</value>
+  </data>
+  <data name="frmMain_mniProjectSave" xml:space="preserve">
+    <value>Save library</value>
+  </data>
+  <data name="frmMain_mniProjectSaveAs" xml:space="preserve">
+    <value>Save library as</value>
+  </data>
+  <data name="frmMain_mniProjectSaveAs_Click_openFilter" xml:space="preserve">
+    <value>All files</value>
+  </data>
+  <data name="frmMain_mniProjectSaveAs_Click_opentitle" xml:space="preserve">
+    <value>Enter the library name to save</value>
+  </data>
+  <data name="frmMain_mniProjectSave_Click" xml:space="preserve">
+    <value>Library was saved</value>
+  </data>
+  <data name="frmMain_mniRecent0" xml:space="preserve">
+    <value>Default library</value>
+  </data>
+  <data name="frmMain_mniRecent0_TT" xml:space="preserve">
+    <value>Default library</value>
+  </data>
+  <data name="frmMain_myAppEvents_FileEncryptedEvent_Dec" xml:space="preserve">
+    <value>Decrypted file {0} in {1}</value>
+  </data>
+  <data name="frmMain_myAppEvents_FileEncryptedEvent_Enc" xml:space="preserve">
+    <value>Encrypted file {0} in {1}</value>
+  </data>
+  <data name="frmMain_tsbFileDecrypt" xml:space="preserve">
+    <value>Decrypt</value>
+  </data>
+  <data name="frmMain_tsbFileDecryptAndOpen" xml:space="preserve">
+    <value>Decrypt and open</value>
+  </data>
+  <data name="frmMain_tsbFileDecryptAndOpen_Click_msg" xml:space="preserve">
+    <value>{0} files selected. Do you want to decrypt and open at the same time?
+This can block your computer.</value>
+  </data>
+  <data name="frmMain_tsbFileDecryptAndOpen_Click_msg_errTry" xml:space="preserve">
+    <value>Do you want to deactivate error messages?</value>
+  </data>
+  <data name="frmMain_tsbFileDecryptAndOpen_frmdlg_cancelButton" xml:space="preserve">
+    <value>Decrypt only</value>
+  </data>
+  <data name="frmMain_tsbFileDecryptAndOpen_TT" xml:space="preserve">
+    <value>Decrypt and open with asociated application</value>
+  </data>
+  <data name="frmMain_tsbFileDecrypt_TT" xml:space="preserve">
+    <value>Decrypt selected files</value>
+  </data>
+  <data name="frmMain_tsbFileEncrypt" xml:space="preserve">
+    <value>Encrypt</value>
+  </data>
+  <data name="frmMain_tsbFileEncrypt_TT" xml:space="preserve">
+    <value>Encrypt selected files</value>
+  </data>
+  <data name="frmMain_tsbFolderAdd" xml:space="preserve">
+    <value>Add folder</value>
+  </data>
+  <data name="frmMain_tsbOptions_TT" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="frmMain_tsbProjectsMain" xml:space="preserve">
+    <value>Libraries</value>
+  </data>
+  <data name="frmMain_tsbProjectsMain_TT" xml:space="preserve">
+    <value>Library Admin</value>
+  </data>
+  <data name="frmMain_ucCryptExp_lvItemSelectedEvent" xml:space="preserve">
+    <value>{0} Selected</value>
+  </data>
+  <data name="frmOptions_chkIntegrateInWindowsMenu" xml:space="preserve">
+    <value>Integrate in windows shell</value>
+  </data>
+  <data name="frmOptions_chkIntegrateInWindowsMenu_tag" xml:space="preserve">
+    <value>Enabling this feature will display an option to decrypt the files from the context menu of windows</value>
+  </data>
+  <data name="frmOptions_chkNotDecryptWithoutExtension" xml:space="preserve">
+    <value>Do not decrypt files without application extension</value>
+  </data>
+  <data name="frmOptions_chkNotDecryptWithoutExtension_tag" xml:space="preserve">
+    <value>When this option is enabled the application do not decrypt files without encryption extension in group operations. Individually you can force to decrypt.</value>
+  </data>
+  <data name="frmOptions_chkOpenAfterDecrypt" xml:space="preserve">
+    <value>Open file with asociated application after decryption</value>
+  </data>
+  <data name="frmOptions_chkOpenAfterDecrypt_tag" xml:space="preserve">
+    <value>After decrypt a file the application will open the file with asociated app in windows</value>
+  </data>
+  <data name="frmOptions_lblInfoOptions" xml:space="preserve">
+    <value>Info about every option</value>
+  </data>
+  <data name="frmOptions_lbl_pwdTitle" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="frmOptions_text" xml:space="preserve">
+    <value>Configuration options</value>
+  </data>
+  <data name="mniHelp_txt" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="pwdControl_15" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pwdControl_btnContinue" xml:space="preserve">
+    <value>&amp;Continue</value>
+  </data>
+  <data name="pwdControl_btnDeletePwd" xml:space="preserve">
+    <value>Your password is stored, in this way you only need to enter once. If you want delete click here.</value>
+  </data>
+  <data name="pwdControl_chkShowPwd" xml:space="preserve">
+    <value>Show password</value>
+  </data>
+  <data name="pwdControl_chkShowPwd_tt" xml:space="preserve">
+    <value>Check this option to display the password while you type</value>
+  </data>
+  <data name="pwdControl_chkStorePwd" xml:space="preserve">
+    <value>Store password</value>
+  </data>
+  <data name="pwdControl_chkStorePwd_tt" xml:space="preserve">
+    <value>Check this option to allow the application store your encrypted key and only have to enter once.</value>
+  </data>
+  <data name="pwdControl_lblInfoPwd" xml:space="preserve">
+    <value>The first time you need to enter the password but then no longer be necessary. To enter a "One Time Password" then select the "Store password" option. The application will save the encrypted password to access quickly if you trust on this computer.</value>
+  </data>
+  <data name="pwdControl_lblReenterPassword" xml:space="preserve">
+    <value>Enter the password again</value>
+  </data>
+  <data name="pwdControl_lbl_pwdTitle" xml:space="preserve">
+    <value>Enter your password</value>
+  </data>
+  <data name="pwdControl_txtPassDecrypt_tt" xml:space="preserve">
+    <value>Enter the password to encrypt/decrypt files</value>
+  </data>
+  <data name="pwdControl_txtPwdConfirm_tt" xml:space="preserve">
+    <value>Reenter the password to validate</value>
+  </data>
+  <data name="test" xml:space="preserve">
+    <value>current culture en español</value>
+  </data>
+  <data name="UCAssistantMessage_lblDragFromExplorerInfoDown" xml:space="preserve">
+    <value>Select files or folders in Windows Explorer and drag them to the library window</value>
+  </data>
+  <data name="UCAssistantMessage_lblDragFromExplorerTop" xml:space="preserve">
+    <value>Select folders in the browser application window and drag them to the library</value>
+  </data>
+  <data name="UCAssistantMessage_lbl_or" xml:space="preserve">
+    <value>Or ...</value>
+  </data>
+  <data name="UCAssistantMessage_lbl_title" xml:space="preserve">
+    <value>Add files to your library</value>
+  </data>
+  <data name="ucCryptExp_lv_name" xml:space="preserve">
+    <value>Name</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_lv_path" xml:space="preserve">
+    <value>File path</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_lv_size" xml:space="preserve">
+    <value>Size</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_lv_type" xml:space="preserve">
+    <value>Type</value>
+    <comment>used in uccryptexplorer listview columns</comment>
+  </data>
+  <data name="ucCryptExp_mniFolderOpen" xml:space="preserve">
+    <value>Open file folder</value>
+    <comment>used in uccryptexplorer listview context menu </comment>
+  </data>
+  <data name="ucCryptExp_mniRemove" xml:space="preserve">
+    <value>Remove from project</value>
+    <comment>used in uccryptexplorer listview context menu</comment>
+  </data>
+  <data name="ucCryptExp_mniRemove_msgdelete" xml:space="preserve">
+    <value>Do you want to remove the file from actual library?</value>
+  </data>
+  <data name="ucCryptExp_mniRemove_tt" xml:space="preserve">
+    <value>Remove from library but maintain in original place</value>
+    <comment>used in uccryptexplorer listview context menu</comment>
+  </data>
+  <data name="ucCryptExp_mnuopenfile" xml:space="preserve">
+    <value>Open</value>
+    <comment>used in uccryptexplorer listview context menu</comment>
+  </data>
+  <data name="ucCryptExp_workspaceload_fileNotFound" xml:space="preserve">
+    <value>Library do not exist in that path</value>
+  </data>
+  <data name="UCExplorer_btnCollapseCryptExplorer" xml:space="preserve">
+    <value>Expand or minimize panel</value>
+  </data>
+  <data name="UCExplorer_imgExplorerTop_TT" xml:space="preserve">
+    <value>Click here to expand explorer panel to add files to your project</value>
+  </data>
+  <data name="UCExplorer_lblEncryptedLib" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="UCExplorer_lblExplorerTop" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="UCExplorer_lblListViewItemCount" xml:space="preserve">
+    <value>{0} added elements</value>
+  </data>
+  <data name="UcExplorer_LvItemAddedCountEvent" xml:space="preserve">
+    <value>{0} added elements</value>
+  </data>
+  <data name="UCExplorer_UcCryptExplorer1_TT" xml:space="preserve">
+    <value>This is the list of common files that you use</value>
+  </data>
+  <data name="WindowsContextMenu_Decrypt" xml:space="preserve">
+    <value>Decrypt</value>
+    <comment>used in uccryptexplorer listview context menu y windows</comment>
+  </data>
+  <data name="WindowsContextMenu_DecryptAndOpen" xml:space="preserve">
+    <value>Decrypt and open</value>
+    <comment>used in uccryptexplorer listview context menu y windows</comment>
+  </data>
+  <data name="WindowsContextMenu_Encrypt" xml:space="preserve">
+    <value>Encrypt</value>
+    <comment>used in uccryptexplorer listview context menu y windows</comment>
+  </data>
+  <data name="WindowsContextMenu_File" xml:space="preserve">
+    <value>Files</value>
+    <comment>used in uccryptexplorer listview context menu y windows</comment>
+  </data>
+  <data name="WindowsContextMenu_Root" xml:space="preserve">
+    <value>OneCrypt</value>
+    <comment>used in uccryptexplorer listview context menu y windows</comment>
+  </data>
+  <data name="frmMain_mniOpenOptionsWindow" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+  <data name="frmMain_tsbchangeLanguage" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+  <data name="frmOptions_chkSaveAutomatic" xml:space="preserve">
+    <value>Save libraries when shutdown</value>
+  </data>
+  <data name="frmOptions_chkSaveAutomatic_tag" xml:space="preserve">
+    <value>If you check this option the application will save the library before exit</value>
+  </data>
+  <data name="frmOptions_chkStartWithWindows" xml:space="preserve">
+    <value>Start {0} at Windows startup</value>
+  </data>
+  <data name="frmOptions_chkStartWithWindows_tag" xml:space="preserve">
+    <value>The aplication will be started with windows startup</value>
+  </data>
+  <data name="frmmain_tsbCompressFiles" xml:space="preserve">
+    <value>Zip files</value>
+  </data>
+  <data name="frmmain_tsbCompressFiles_TT" xml:space="preserve">
+    <value>Zip selected files</value>
+  </data>
+  <data name="WindowsContextMenu_OpenUI" xml:space="preserve">
+    <value>Send to OneCrypt</value>
+    <comment>used in uccryptexplorer listview context menu y windows</comment>
+  </data>
+  <data name="WindowsContextMenu_OpenArgUserNotValidated" xml:space="preserve">
+    <value>You need to validate yourself in application. Please enter your password first and try again.</value>
+    <comment>used in uccryptexplorer listview context menu y windows</comment>
+  </data>
+  <data name="LibraryRecentsFiles" xml:space="preserve">
+    <value>Recent files</value>
+  </data>
+  <data name="frmMain_mniProjectRecentsFiles" xml:space="preserve">
+    <value>Recent files</value>
+  </data>
+  <data name="aboutbox_about" xml:space="preserve">
+    <value>About {0}</value>
+  </data>
+  <data name="aboutbox_Autor" xml:space="preserve">
+    <value>Autor:</value>
+  </data>
+  <data name="aboutbox_Version" xml:space="preserve">
+    <value>Version {0}</value>
+  </data>
+  <data name="ChangeLanguageWindowsTitle" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+  <data name="LanguageChangeMessage" xml:space="preserve">
+    <value>We recommend to restart the application to see the new language. 
+Do you want to close now?</value>
+  </data>
+  <data name="btnTextCrypt_tt" xml:space="preserve">
+    <value>Encrypt/Decrypt text and paste automatically in other windows</value>
+  </data>
+  <data name="frmMain_btnSaveSelectedItemsAs" xml:space="preserve">
+    <value>Save selected items as</value>
+  </data>
+  <data name="frmMain_btnSaveSelectedItemsAs_TT" xml:space="preserve">
+    <value>Save selected items as new library</value>
+  </data>
+  <data name="btnEncryptOpenLibraries" xml:space="preserve">
+    <value>Encrypt Library</value>
+  </data>
+  <data name="msgOpenLibrariesEncrypted" xml:space="preserve">
+    <value>Las librerias abiertas han sido encriptadas. Por favor guarde las librerias si no lo ha hecho.</value>
+  </data>
+  <data name="btnEncryptOpenLibraries_TT" xml:space="preserve">
+    <value>Encrypt unencryptd files in actual Library</value>
+  </data>
+  <data name="ctxNotify_btnCloseApplication" xml:space="preserve">
+    <value>Close application</value>
+  </data>
+  <data name="ctxNotify_btnEncryptText" xml:space="preserve">
+    <value>Encrypt/Decrypt text tool</value>
+  </data>
+  <data name="ctxNotify_btnOpenPwdManager" xml:space="preserve">
+    <value>Open password manager</value>
+  </data>
+  <data name="ctxNotify_btnShowOneCrypt" xml:space="preserve">
+    <value>Show OneCrypt</value>
+  </data>
+  <data name="ExplorerTitle" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="LibraryTitle" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="frmMain_mniProjectSaveAll" xml:space="preserve">
+    <value>Save All libraries</value>
+  </data>
+  <data name="SaveAllMessage" xml:space="preserve">
+    <value>All libraries saved </value>
+  </data>
+  <data name="btnUpdateApp_Text" xml:space="preserve">
+    <value>There is a new version available {0}</value>
+  </data>
+  <data name="frmmain_btnCheckNewVersion" xml:space="preserve">
+    <value>Check new version</value>
+  </data>
+  <data name="Zip_Aceptar" xml:space="preserve">
+    <value>&amp;Aceptar</value>
+  </data>
+  <data name="Zip_btnContinue" xml:space="preserve">
+    <value>Guardar en</value>
+  </data>
+  <data name="Zip_chkAutoexec" xml:space="preserve">
+    <value>Crear autoejecutable</value>
+  </data>
+  <data name="Zip_chkopenpath" xml:space="preserve">
+    <value>Abrir carpeta al finalizar</value>
+  </data>
+  <data name="Zip_FormTitle" xml:space="preserve">
+    <value>Comprimir archivos</value>
+  </data>
+  <data name="Zip_MainTitle" xml:space="preserve">
+    <value>Comprimir archivos</value>
+  </data>
+  <data name="Zip_savepathNameRequired" xml:space="preserve">
+    <value>File name is required.</value>
+  </data>
+  <data name="Zip_savepathNameTitle" xml:space="preserve">
+    <value>Save file on</value>
+  </data>
+  <data name="tabbutton_TT" xml:space="preserve">
+    <value>Double Click to open in new window</value>
+  </data>
+  <data name="frmOptions_chkOpenAppWithCtrolKey" xml:space="preserve">
+    <value>Restore application window clicking "Control" key twice</value>
+  </data>
+  <data name="frmOptions_chkOpenAppWithCtrolKey_tag" xml:space="preserve">
+    <value>When app is minimized you can restore application window clicking "Control" key twice.</value>
+  </data>
+  <data name="frmOptions_chkOpenImg" xml:space="preserve">
+    <value>Open images in this app</value>
+  </data>
+  <data name="frmOptions_chkOpenImg_tag" xml:space="preserve">
+    <value>Open images inside the application avoding the need of using another app</value>
+  </data>
+</root>

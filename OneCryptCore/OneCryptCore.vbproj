@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A75B2BEF-F19F-4691-9112-2BBB30C47736}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>OneCryptCore</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\AppConst.vb" />
+    <Compile Include="Class\AppEventsClass.vb" />
+    <Compile Include="Class\AppSettings.vb" />
+    <Compile Include="Class\AppVars.vb" />
+    <Compile Include="Class\AppWindowsHelper.vb" />
+    <Compile Include="Class\CryptByCertificate.vb" />
+    <Compile Include="Class\Crypto.vb" />
+    <Compile Include="Class\CryptoBase.vb" />
+    <Compile Include="Class\Logging.vb" />
+    <Compile Include="Class\LibraryObj.vb" />
+    <Compile Include="Class\PasswordQuality.vb" />
+    <Compile Include="Class\Rijndael.vb" />
+    <Compile Include="Data\CryptFileObj.vb" />
+    <Compile Include="drawing\ImageTools.vb" />
+    <Compile Include="exceptions\ErrorVisorHelper.vb" />
+    <Compile Include="exceptions\FileNotEncryptedException.vb" />
+    <Compile Include="exceptions\FileNotFoundException.vb" />
+    <Compile Include="Class\FileDataHelper.vb" />
+    <Compile Include="exceptions\FileNotDecryptedException.vb" />
+    <Compile Include="exceptions\FileInUseException.vb" />
+    <Compile Include="Class\Msg.vb" />
+    <Compile Include="Class\PortableSettingsProvider.vb" />
+    <Compile Include="exceptions\frmErrorVisor.Designer.vb">
+      <DependentUpon>frmErrorVisor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="exceptions\frmErrorVisor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsDlg\frmDlgSaveProject.Designer.vb">
+      <DependentUpon>frmDlgSaveProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formsDlg\frmDlgSaveProject.vb">
+      <CustomToolNamespace>ind.frm.core</CustomToolNamespace>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formsDlg\frmDlg.Designer.vb">
+      <DependentUpon>frmDlg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formsDlg\frmDlg.vb">
+      <CustomToolNamespace>ind.frm.core</CustomToolNamespace>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAppEvents.Designer.vb">
+      <DependentUpon>FrmAppEvents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAppEvents.vb">
+      <SubType>Form</SubType>
+      <CustomToolNamespace>ind.frm.core</CustomToolNamespace>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="p2p\IPCPipe.vb" />
+    <Compile Include="p2p\P2PUDP.vb" />
+    <Compile Include="StrUtil.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="exceptions\frmErrorVisor.resx">
+      <DependentUpon>frmErrorVisor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsDlg\frmDlgSaveProject.resx">
+      <DependentUpon>frmDlgSaveProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formsDlg\frmDlg.resx">
+      <DependentUpon>frmDlg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAppEvents.resx">
+      <DependentUpon>FrmAppEvents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Settings.settings">
+      <CustomToolNamespace>ind.onecrypt</CustomToolNamespace>
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_DecryptAndOpenDisabled_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_server.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_DecryptAndOpen_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OneCryptLang\OneCryptLang.vbproj">
+      <Project>{a24f788d-fd08-4ed5-9442-b7b092c8f7f2}</Project>
+      <Name>OneCryptLang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_unlock_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_lock_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_unlock_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_lock_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Library_delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

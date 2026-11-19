@@ -1,0 +1,1003 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2453CDCD-D984-4540-8785-2E653103A3D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>My.MyApplication</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>OneCrypt</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://localhost:8184/</InstallUrl>
+    <UpdateUrl>http://localhost:8184/</UpdateUrl>
+    <ProductName>OneCrypt</ProductName>
+    <PublisherName>Fran R. Moreno Santana</PublisherName>
+    <SuiteName>OneCrypt</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>7.0.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\AnyCpu\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\lock_server.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug1\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\AnyCpu\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ExpTreeLib" Version="3.2.0" />
+    <PackageReference Include="Microsoft.SqlServer.Compact" Version="4.0.8876.1" GeneratePathProperty="true" />
+    <PackageReference Include="NLog" Version="3.0.0" />
+    <PackageReference Include="SharpShell" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(PkgMicrosoft_SqlServer_Compact)\NativeBinaries\amd64\*.*">
+      <Link>amd64\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(PkgMicrosoft_SqlServer_Compact)\NativeBinaries\x86\*.*">
+      <Link>x86\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AppGen.vb" />
+    <Compile Include="Class\sharpshell\ServerManagerApi.vb" />
+    <Compile Include="ControlsBase\KeyButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlsBase\LabelMessageEx.Designer.vb">
+      <DependentUpon>LabelMessageEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsBase\LabelMessageEx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlsBase\RtfBuilder\ColorTable.vb" />
+    <Compile Include="ControlsBase\RtfBuilder\ControlWord.vb" />
+    <Compile Include="ControlsBase\RtfBuilder\ControlWordCollection.vb" />
+    <Compile Include="ControlsBase\RtfBuilder\FontTable.vb" />
+    <Compile Include="ControlsBase\RtfBuilder\RtfBuilder.vb" />
+    <Compile Include="ControlsBase\RtfBuilder\RtfFormat.vb" />
+    <Compile Include="ControlsBase\RtfBuilder\RtfHeader.vb" />
+    <Compile Include="ControlsBase\RtfBuilder\TableBase%28Of TElement%29.vb" />
+    <Compile Include="ControlsBase\textboxEx.designer.vb">
+      <DependentUpon>textboxEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsBase\textboxEx.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlsBase\TextBoxEx0.Designer.vb">
+      <DependentUpon>TextBoxEx0.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsBase\TextBoxEx0.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\AppEventsClass.vb" />
+    <Compile Include="Class\ArgumentController.vb" />
+    <Compile Include="Class\AutoUpdate.vb" />
+    <Compile Include="Class\ControlDoublePressDetector.vb" />
+    <Compile Include="Class\lockscreen\abcLockScreen.vb" />
+    <Compile Include="Class\lockscreen\abcLockSystemParameters.vb" />
+    <Compile Include="Class\lockscreen\FrmBackGroundLockScreen.Designer.vb">
+      <DependentUpon>FrmBackGroundLockScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\lockscreen\FrmBackGroundLockScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\lockscreen\LockWorkStationNativeMethods.vb" />
+    <Compile Include="ControlsBase\LviEx.vb" />
+    <Compile Include="Class\OCGlobal.vb" />
+    <Compile Include="Class\WindowUnsafeNativeMethods.vb" />
+    <Compile Include="Controls\ctrlSearch\UCSearch.Designer.vb">
+      <DependentUpon>UCSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctrlSearch\UCSearch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Generic\LabelVertical.Designer.vb">
+      <DependentUpon>LabelVertical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Generic\LabelVertical.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Generic\ToolStripRender.vb" />
+    <Compile Include="Controls\Generic\UCTreeView.Designer.vb">
+      <DependentUpon>UCTreeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Generic\UCTreeView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\UcRecentLibrariesInfo2.Designer.vb">
+      <DependentUpon>UcRecentLibrariesInfo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\UcRecentLibrariesInfo2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\UcLibraryRecentFiles.Designer.vb">
+      <DependentUpon>UcLibraryRecentFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\UcLibraryRecentFiles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\UcNewLibrary.Designer.vb">
+      <DependentUpon>UcNewLibrary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\UcNewLibrary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\exceptions\ErrorVisorHelper.vb" />
+    <Compile Include="Class\exceptions\frmErrorVisor.Designer.vb">
+      <DependentUpon>frmErrorVisor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\exceptions\frmErrorVisor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\FileAssociation.vb" />
+    <Compile Include="Controls\Libraries\UcRecentLibrariesInfo.Designer.vb">
+      <DependentUpon>UcRecentLibrariesInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\UcRecentLibrariesInfo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControlEx\IndTabInfo.vb" />
+    <Compile Include="Controls\TabControlEx\IndTabInfoCollection.vb" />
+    <Compile Include="Controls\UCLeftMenu.Designer.vb">
+      <DependentUpon>UCLeftMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCLeftMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCWinExplorer.Designer.vb">
+      <DependentUpon>UCWinExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCWinExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data\FrmDDBBInspector.Designer.vb">
+      <DependentUpon>FrmDDBBInspector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FrmDDBBInspector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\LibraryDataHelper.vb" />
+    <Compile Include="ControlsBase\IndBaseColors.vb" />
+    <Compile Include="ControlsBase\IndronButton.designer.vb">
+      <DependentUpon>IndronButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlsBase\IndronButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\LibraryCollection.vb" />
+    <Compile Include="Controls\TabControlEx\IndronTabButton1.designer.vb">
+      <DependentUpon>IndronTabButton1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TabControlEx\IndronTabButton1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControlEx\IndronTabButtonContainer.Designer.vb">
+      <DependentUpon>IndronTabButtonContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TabControlEx\IndronTabButtonContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControlEx\IndronTabControl.Designer.vb">
+      <DependentUpon>IndronTabControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TabControlEx\IndronTabControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControlEx\IndronTabPage.Designer.vb">
+      <DependentUpon>IndronTabPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TabControlEx\IndronTabPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCIndTabCtrl.Designer.vb">
+      <DependentUpon>UCIndTabCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCIndTabCtrl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCAssistantMessage.Designer.vb">
+      <DependentUpon>UCAssistantMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCAssistantMessage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCCryptProgressB.Designer.vb">
+      <DependentUpon>UCCryptProgressB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCCryptProgressB.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\UCLibraryRecentElement.Designer.vb">
+      <DependentUpon>UCLibraryRecentElement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\UCLibraryRecentElement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\UCLibraryRecents.Designer.vb">
+      <DependentUpon>UCLibraryRecents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\UCLibraryRecents.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\UCLibraryRecentsTabPage.Designer.vb">
+      <DependentUpon>UCLibraryRecentsTabPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\UCLibraryRecentsTabPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\UCLibraryTabpage.Designer.vb">
+      <DependentUpon>UCLibraryTabpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\UCLibraryTabpage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCMessage.Designer.vb">
+      <DependentUpon>UCMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCMessage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCPwdCtrl.Designer.vb">
+      <DependentUpon>UCPwdCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCPwdCtrl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data\FileObjCollection.vb" />
+    <Compile Include="Data\ListViewHelper.vb" />
+    <Compile Include="Data\MyTimer.vb" />
+    <Compile Include="forms\AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\AppBaseUC.Designer.vb">
+      <DependentUpon>AppBaseUC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AppBaseUC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\FrmBase.Designer.vb">
+      <DependentUpon>FrmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FrmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmBrowser.Designer.vb">
+      <DependentUpon>frmBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmEncryptText.Designer.vb">
+      <DependentUpon>frmEncryptText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmEncryptText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\lockscreen\FrmLockScreenPwd.Designer.vb">
+      <DependentUpon>FrmLockScreenPwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Class\lockscreen\FrmLockScreenPwd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Libraries\FrmLibrary.Designer.vb">
+      <DependentUpon>FrmLibrary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Libraries\FrmLibrary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmImage.Designer.vb">
+      <DependentUpon>frmImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmOptions.Designer.vb">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmOptions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\frmZipFiles.Designer.vb">
+      <DependentUpon>frmZipFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\frmZipFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\LibraryDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LibraryDataSet.vb">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain\frmMainP2Mgr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain\frmMainKeyBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controls\PasswordStrengthControl.Designer.vb">
+      <DependentUpon>PasswordStrengthControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PasswordStrengthControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pwdManager\Class\ListViewItemEx.vb" />
+    <Compile Include="pwdManager\Class\PwdEntryObject.vb" />
+    <Compile Include="pwdManager\controls\frmPwdConfig.Designer.vb">
+      <DependentUpon>frmPwdConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pwdManager\controls\frmPwdConfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwdManager\controls\UCEntryAdd.Designer.vb">
+      <DependentUpon>UCEntryAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pwdManager\controls\UCEntryAdd.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pwdManager\controls\UCpwdListView.Designer.vb">
+      <DependentUpon>UCpwdListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pwdManager\controls\UCpwdListView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pwdManager\controls\UCPwdManagerMain.Designer.vb">
+      <DependentUpon>UCPwdManagerMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pwdManager\controls\UCPwdManagerMain.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pwdManager\controls\UCPwdManagerTabPage.Designer.vb">
+      <DependentUpon>UCPwdManagerTabPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pwdManager\controls\UCPwdManagerTabPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pwdManager\FrmPwdMgr.Designer.vb">
+      <DependentUpon>FrmPwdMgr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pwdManager\FrmPwdMgr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pwdManager\pwdManagerGlobal.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="UCCryptExplorer.Designer.vb">
+      <DependentUpon>UCCryptExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCCryptExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcCryptSubprocess\CryptExplorerBackGroundProcess.vb" />
+    <Compile Include="UCExplorer.Designer.vb">
+      <DependentUpon>UCExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UCPwdController.Designer.vb">
+      <DependentUpon>UCPwdController.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UCPwdController.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTreeExplorer.Designer.vb">
+      <DependentUpon>UCTreeExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UCTreeExplorer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlsBase\LabelMessageEx.resx">
+      <DependentUpon>LabelMessageEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlsBase\textboxEx.resx">
+      <DependentUpon>textboxEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlsBase\TextBoxEx0.resx">
+      <DependentUpon>TextBoxEx0.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\exceptions\frmErrorVisor.resx">
+      <DependentUpon>frmErrorVisor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlsBase\IndronButton.resx">
+      <DependentUpon>IndronButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\lockscreen\FrmBackGroundLockScreen.resx">
+      <DependentUpon>FrmBackGroundLockScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ctrlSearch\UCSearch.resx">
+      <DependentUpon>UCSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Generic\LabelVertical.resx">
+      <DependentUpon>LabelVertical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Generic\UCTreeView.resx">
+      <DependentUpon>UCTreeView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Libraries\UcRecentLibrariesInfo2.resx">
+      <DependentUpon>UcRecentLibrariesInfo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Libraries\UcLibraryRecentFiles.resx">
+      <DependentUpon>UcLibraryRecentFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Libraries\UcRecentLibrariesInfo.resx">
+      <DependentUpon>UcRecentLibrariesInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabControlEx\IndronTabButton1.resx">
+      <DependentUpon>IndronTabButton1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabControlEx\IndronTabButtonContainer.resx">
+      <DependentUpon>IndronTabButtonContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabControlEx\IndronTabControl.resx">
+      <DependentUpon>IndronTabControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabControlEx\IndronTabPage.resx">
+      <DependentUpon>IndronTabPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCAssistantMessage.resx">
+      <DependentUpon>UCAssistantMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCCryptProgressB.resx">
+      <DependentUpon>UCCryptProgressB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Libraries\UCLibraryRecentElement.resx">
+      <DependentUpon>UCLibraryRecentElement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Libraries\UCLibraryRecents.resx">
+      <DependentUpon>UCLibraryRecents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Libraries\UCLibraryRecentsTabPage.resx">
+      <DependentUpon>UCLibraryRecentsTabPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCLeftMenu.resx">
+      <DependentUpon>UCLeftMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCMessage.resx">
+      <DependentUpon>UCMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Libraries\UcNewLibrary.resx">
+      <DependentUpon>UcNewLibrary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCPwdCtrl.resx">
+      <DependentUpon>UCPwdCtrl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCWinExplorer.resx">
+      <DependentUpon>UCWinExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\FrmDDBBInspector.resx">
+      <DependentUpon>FrmDDBBInspector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AppBaseUC.resx">
+      <DependentUpon>AppBaseUC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmBase.resx">
+      <DependentUpon>FrmBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmBrowser.resx">
+      <DependentUpon>frmBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmEncryptText.resx">
+      <DependentUpon>frmEncryptText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Class\lockscreen\FrmLockScreenPwd.resx">
+      <DependentUpon>FrmLockScreenPwd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Libraries\FrmLibrary.resx">
+      <DependentUpon>FrmLibrary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmImage.resx">
+      <DependentUpon>frmImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmOptions.en.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmOptions.es.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmOptions.ps.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmOptions.resx">
+      <DependentUpon>frmOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\frmZipFiles.resx">
+      <DependentUpon>frmZipFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PasswordStrengthControl.resx">
+      <DependentUpon>PasswordStrengthControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwdManager\controls\frmPwdConfig.resx">
+      <DependentUpon>frmPwdConfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwdManager\controls\UCEntryAdd.resx">
+      <DependentUpon>UCEntryAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwdManager\controls\UCpwdListView.resx">
+      <DependentUpon>UCpwdListView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwdManager\controls\UCPwdManagerMain.resx">
+      <DependentUpon>UCPwdManagerMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwdManager\controls\UCPwdManagerTabPage.resx">
+      <DependentUpon>UCPwdManagerTabPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pwdManager\FrmPwdMgr.resx">
+      <DependentUpon>FrmPwdMgr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCCryptExplorer.resx">
+      <DependentUpon>UCCryptExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCExplorer.resx">
+      <DependentUpon>UCExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UCPwdController.resx">
+      <DependentUpon>UCPwdController.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTreeExplorer.resx">
+      <DependentUpon>UCTreeExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\LibraryDataSet.xsc">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data\LibraryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LibraryDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\LibraryDataSet.xss">
+      <DependentUpon>LibraryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\My.Resources.Resource1.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="oneCryptClient.pfx" />
+    <None Include="OneCryptUI_TemporaryKey.pfx" />
+    <None Include="Resources\Security-Approved.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_search_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_search_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_lock_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_unlock_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_lock_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_unlock_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse_arrow_left.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collapse_arrow_right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\topMenuBackGround_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_DecryptAndOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About_trans50_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_DecryptAndOpen_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_DecryptAndOpenDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_DecryptAndOpenDisabled_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_server.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_128x128_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_save_as1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_lock_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_unlock_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_open_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExplorerTop_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OneCryptCore\OneCryptCore.vbproj">
+      <Project>{a75b2bef-f19f-4691-9112-2bbb30c47736}</Project>
+      <Name>OneCryptCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneCryptLang\OneCryptLang.vbproj">
+      <Project>{a24f788d-fd08-4ed5-9442-b7b092c8f7f2}</Project>
+      <Name>OneCryptLang</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinAutoType\KeePassLib\KeePassLib.csproj">
+      <Project>{53573E4E-33CB-4FDB-8698-C95F5E40E7F3}</Project>
+      <Name>Autotype.Keepass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock-open_128x128_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeItem32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folderOpen32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeTab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseTabBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeDeactivated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeDeactivated1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compressed 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compressed 128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compressed 48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\oneCryptDatabase.sdf">
+      <Link>oneCryptDatabase.sdf</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeItem-gray-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Library_delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdManager_menu_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cryptText_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_Encrypt_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_Crypt_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filenotexistwarning_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filenotexistwarning1_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_menu_white32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direction_left_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direction_right_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direction_left_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direction_right_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on-shutdown-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-lock-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_delete_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdmgr_tab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project_menu_recentfiles_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

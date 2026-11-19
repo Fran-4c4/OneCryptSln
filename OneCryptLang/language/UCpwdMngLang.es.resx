@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddEntry_tt" xml:space="preserve">
+    <value>Crear nueva entrada en el gestor de contraseñas</value>
+  </data>
+  <data name="btnCopypwd_tt" xml:space="preserve">
+    <value>Copia la contraseña al portapapeles (Ctrl+P)</value>
+  </data>
+  <data name="btnCopyUserName_tt" xml:space="preserve">
+    <value>Copia el nombre de usuario al portapapeles (ctrl+U)</value>
+  </data>
+  <data name="btnOpenWebsite_tt" xml:space="preserve">
+    <value>Abrir la url en el navegador (ctrl+W)</value>
+  </data>
+  <data name="formAddEntryText" xml:space="preserve">
+    <value>Añadir nueva entrada en el gestor de contraseñas</value>
+  </data>
+  <data name="txtEntryName_empty" xml:space="preserve">
+    <value>Lo siento, el nombre de la entrada no puede estar vacio</value>
+  </data>
+  <data name="txtEntryPwdRepeat_diferent" xml:space="preserve">
+    <value>Lo siento, la contraseña de validación no coincide</value>
+  </data>
+  <data name="txtEntryPwdRepeat_empty" xml:space="preserve">
+    <value>Lo siento, la contraseña de validación no puede estar vacia</value>
+  </data>
+  <data name="txtEntryPwd_empty" xml:space="preserve">
+    <value>Lo siento, la contraseña no puede estar vacia</value>
+  </data>
+  <data name="txtEntryUserName_empty" xml:space="preserve">
+    <value>Lo siento, el usuario no puede estar vacio</value>
+  </data>
+  <data name="btnPwdManagerOpen" xml:space="preserve">
+    <value>Abrir el gestor de contraseñas</value>
+  </data>
+  <data name="chkShowPwd" xml:space="preserve">
+    <value>Mostrar contraseña</value>
+  </data>
+  <data name="lblNotes" xml:space="preserve">
+    <value>Notas</value>
+  </data>
+  <data name="pwdManagerTabButton" xml:space="preserve">
+    <value>Gestor de contraseñas</value>
+  </data>
+  <data name="txtEntryName" xml:space="preserve">
+    <value>Entrada</value>
+  </data>
+  <data name="txtEntryPwd" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="txtEntryPwdRepeat" xml:space="preserve">
+    <value>Confirma contraseña</value>
+  </data>
+  <data name="txtEntryURL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="txtEntryUserName" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+  <data name="UCAddEntry_btn_cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="UCAddEntry_btn_ok" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="UCAddEntry_TitleSub_ForEdit" xml:space="preserve">
+    <value>Modificar tu usuario/contraseña</value>
+  </data>
+  <data name="UCAddEntry_TitleSub_ForNew" xml:space="preserve">
+    <value>Crear nuevo usuario/contraseña</value>
+  </data>
+  <data name="UCAddEntry_Title_ForEdit" xml:space="preserve">
+    <value>Editar entrada</value>
+  </data>
+  <data name="UCAddEntry_Title_ForNew" xml:space="preserve">
+    <value>Crear nueva entrada</value>
+  </data>
+  <data name="btnViewGroups_TT" xml:space="preserve">
+    <value>Cambiar la vista para ver las entradas agrupadas o no</value>
+  </data>
+  <data name="lblEntryGroup" xml:space="preserve">
+    <value>Grupo</value>
+  </data>
+  <data name="txtEntryURLAsBank" xml:space="preserve">
+    <value>Cuenta bancaria</value>
+  </data>
+  <data name="txtEntryURLAsComputer" xml:space="preserve">
+    <value>Ordenador o IP</value>
+  </data>
+  <data name="txtEntryURLAsCreditCard" xml:space="preserve">
+    <value>Numero de tarjeta de credito</value>
+  </data>
+  <data name="txtEntryURLAsEmail" xml:space="preserve">
+    <value>Correo</value>
+  </data>
+  <data name="txtEntryURLAsGeneric" xml:space="preserve">
+    <value>Generico/Otras</value>
+  </data>
+  <data name="btnOpenWebsiteMniTop" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="btnShowPwd_TT" xml:space="preserve">
+    <value>Mostrar/Ocultar la contraseña en la columna de contraseñas</value>
+  </data>
+  <data name="btnAutoType" xml:space="preserve">
+    <value>Introducir el usuario y la contraseña automaticamente en la ventana anterior</value>
+  </data>
+  <data name="btnAutoTypeMni" xml:space="preserve">
+    <value>Introduce los campos en la ventana anterior</value>
+  </data>
+  <data name="btnAutoTypeMni_TT" xml:space="preserve">
+    <value>Introduce los campos en la ventana anterior automaticamente simulando una secuencia de teclas</value>
+  </data>
+  <data name="btnCopyURL" xml:space="preserve">
+    <value>Copia la URL/Direccions al portapapeles (ctrl+R)</value>
+  </data>
+  <data name="autotypeMesage1" xml:space="preserve">
+    <value>Coloca el cursor en la posición donde deseas insertar el campo</value>
+  </data>
+  <data name="autotypeMesage2" xml:space="preserve">
+    <value>Por defecto la secuencia mas usada en sistemas es {USERNAME}{TAB}{PASSWORD}{ENTER}.</value>
+  </data>
+  <data name="autotypeMesage_instrucctions" xml:space="preserve">
+    <value>Instrucciones:</value>
+  </data>
+  <data name="autotypeMesage_Specialkeys" xml:space="preserve">
+    <value>Palabras especiales:</value>
+  </data>
+  <data name="autotypeMesage_Specialkeys_common" xml:space="preserve">
+    <value>Palabras especiales comunes:</value>
+  </data>
+  <data name="autotypeMesage_Standardfields" xml:space="preserve">
+    <value>Campos estandar:</value>
+  </data>
+  <data name="imgCleanAutotypeField_TT" xml:space="preserve">
+    <value>Limpiar autosecuencia</value>
+  </data>
+  <data name="imgKeyboard_TT" xml:space="preserve">
+    <value>Pulsa aqui para mostrar/ocultar los campos especiales de la autoescritura</value>
+  </data>
+  <data name="lblPnlAutotypeTitle" xml:space="preserve">
+    <value>Send simulated keypresses to other applications.</value>
+  </data>
+  <data name="lblPnlAutotypeTitleSub" xml:space="preserve">
+    <value>Inserta el cursor en la posición donde desear introducir un campo especial y elige una opcion abajo</value>
+  </data>
+  <data name="txtEntryAutoType_tt" xml:space="preserve">
+    <value>Coloca el cursor donde quieres introducir un campo especial</value>
+  </data>
+  <data name="btnConfig_TT" xml:space="preserve">
+    <value>Configura las opciones del gestor de contraseñas</value>
+  </data>
+  <data name="errmsg_passwordrepositoryerror" xml:space="preserve">
+    <value>No se ha podido abrir el fichero contenedor de contraseñas. {0}.  Se ha guardado una copia de este fichero({1})por si desea intentar abrirlo con otra contraseña.</value>
+  </data>
+</root>

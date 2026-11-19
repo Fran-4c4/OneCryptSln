@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A24F788D-FD08-4ED5-9442-B7B092C8F7F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>OneCryptLang</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="language\CoreLang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoreLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="language\frmDlgLang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmDlgLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="language\pwdOptions.es.Designer.vb">
+      <DependentUpon>pwdOptions.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\ExceptionsLang.es.Designer.vb">
+      <DependentUpon>ExceptionsLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\ExceptionsLang.Designer.vb">
+      <DependentUpon>ExceptionsLang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\DDBBExceptionLang.Designer.vb">
+      <DependentUpon>DDBBExceptionLang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\frmEncryptTextLang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>frmEncryptTextLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="language\pwdOptions.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pwdOptions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="language\UCCryptExplorerLang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UCCryptExplorerLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="language\UCPwdControllerLang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UCPwdControllerLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="language\UCpwdListView.en.Designer.vb">
+      <DependentUpon>UCpwdListView.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UCpwdMngLang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UCpwdMngLang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="language\UCpwdListView.es.Designer.vb">
+      <DependentUpon>UCpwdListView.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UCpwdMngLang.es.Designer.vb">
+      <DependentUpon>UCpwdMngLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\frmEncryptTextLang.es.Designer.vb">
+      <DependentUpon>frmEncryptTextLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UCPwdControllerLang.es.Designer.vb">
+      <DependentUpon>UCPwdControllerLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\frmDlgLang.es.Designer.vb">
+      <DependentUpon>frmDlgLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UcNewLibraryLang.en.Designer.vb">
+      <DependentUpon>UcNewLibraryLang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\DDBBExceptionLang.es.Designer.vb">
+      <DependentUpon>DDBBExceptionLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UcNewLibraryLang.es.Designer.vb">
+      <DependentUpon>UcNewLibraryLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UCCryptProgressLang.en.Designer.vb">
+      <DependentUpon>UCCryptProgressLang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UCLibraryLang.en.Designer.vb">
+      <DependentUpon>UCLibraryLang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UCLibraryLang.es.Designer.vb">
+      <DependentUpon>UCLibraryLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UCCryptExplorerLang.es.Designer.vb">
+      <DependentUpon>UCCryptExplorerLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\frmErrorVisorLang.en.Designer.vb">
+      <DependentUpon>frmErrorVisorLang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\frmErrorVisorLang.es.Designer.vb">
+      <DependentUpon>frmErrorVisorLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UCCryptProgressLang.es.Designer.vb">
+      <DependentUpon>UCCryptProgressLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\frmCtxMenuDecryptLang.en.Designer.vb">
+      <DependentUpon>frmCtxMenuDecryptLang.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\frmCtxMenuDecryptLang.es.Designer.vb">
+      <DependentUpon>frmCtxMenuDecryptLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\CoreLang.es.Designer.vb">
+      <DependentUpon>CoreLang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="language\UILang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UILang.resx</DependentUpon>
+    </Compile>
+    <Compile Include="language\UILang.es.Designer.vb">
+      <DependentUpon>UILang.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="language\pwdOptions.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>pwdOptions.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\ExceptionsLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExceptionsLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\ExceptionsLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExceptionsLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\DDBBExceptionLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DDBBExceptionLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\pwdOptions.resx">
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>pwdOptions.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCpwdListView.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCpwdListView.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCpwdMngLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCpwdMngLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCpwdListView.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCpwdListView.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCpwdMngLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCpwdMngLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\frmEncryptTextLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmEncryptTextLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\frmEncryptTextLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmEncryptTextLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCPwdControllerLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCPwdControllerLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCPwdControllerLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCPwdControllerLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\frmDlgLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmDlgLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\frmDlgLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmDlgLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UcNewLibraryLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UcNewLibraryLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\DDBBExceptionLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DDBBExceptionLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UcNewLibraryLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UcNewLibraryLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCCryptProgressLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCCryptProgressLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCLibraryLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCLibraryLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCLibraryLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCLibraryLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCCryptExplorerLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCCryptExplorerLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCCryptExplorerLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCCryptExplorerLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\frmErrorVisorLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmErrorVisorLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\frmErrorVisorLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmErrorVisorLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UCCryptProgressLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCCryptProgressLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\frmCtxMenuDecryptLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmCtxMenuDecryptLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\frmCtxMenuDecryptLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>frmCtxMenuDecryptLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\CoreLang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CoreLang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\CoreLang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CoreLang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UILang.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UILang.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="language\UILang.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>UILang.es.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>ind.lang</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\security_key_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdManager_browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdManager_copypwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdManager_copyuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdManager_copypwd_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdManager_copyuser_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwd_user_add_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grouplvi16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdMng_addentry_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdMng_copyBrowser_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdMng_copypwd_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdMng_copyuser_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdManager_browser_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdManager_ShowPwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdMng_BrowserOpen_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdMng_BrowserOpen_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwdmng_options_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
